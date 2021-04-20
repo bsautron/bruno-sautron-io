@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +11,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  padding: 10px 50px;
+}
+
+.section1-names-fullname {
+  font-size: '7rem';
+  position: relative;
+}
+.section1-names-lastname {
+  position: relative;
+  top: -37px;
+}
+.section-contacts {
+  height: 100%;
+}
+.section1-contacts-item {
+  padding: 10px 0;
 }
