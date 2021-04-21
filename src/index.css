@@ -31,3 +31,9 @@ code {
 .section1-contacts-item {
   padding: 10px 0;
 }
+.skill {
+  width: 200px;
+  height: 30px;
+  padding: 20px;
+  display: inline-block;
+}
