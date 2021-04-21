@@ -17,8 +17,8 @@ export function Experience({ title, company, years, children, tech }) {
               <Grid item className="item-section3">
                 <ul>
                   {
-                      tech.map(t => {
-                          return <li>{t.join(' - ')}</li>
+                      tech.map((t, i) => {
+                          return <li key={i}>{t.join(' - ')}</li>
                       })
                   }
                 </ul>

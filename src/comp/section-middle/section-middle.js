@@ -1,32 +1,32 @@
 import { Grid, Typography, LinearProgress } from '@material-ui/core';
+import './section-middle.css'
 
 export function SectionMiddle() {
+  const skills = [
+    { name: 'Typescript / NodeJs', level: 100 },
+    { name: 'GraphQL', level: 90 },
+    { name: 'Microservices', level: 80 },
+    { name: 'React Native', level: 50 },
+    { name: 'PostgreSQL', level: 100 },
+    { name: 'ReactJs / Angular', level: 80 },
+    { name: 'AWS' , level: 60 },
+  ]
+
     return (
-        <Grid item className="vertical-section">
-          <div className="skill">
-            <Typography color="textPrimary">Typescript / NodeJs</Typography>
-            <LinearProgress variant="determinate" value={100} />
-          </div>
-          <div className="skill">
-            <Typography color="textPrimary">PostgreSQL</Typography>
-            <LinearProgress variant="determinate" value={100} />
-          </div>
-          <div className="skill">
-            <Typography color="textPrimary">GraphQL</Typography>
-            <LinearProgress variant="determinate" value={90} />
-          </div>
-          <div className="skill">
-            <Typography color="textPrimary">ReactJs / Angular</Typography>
-            <LinearProgress variant="determinate" value={80} />
-          </div>
-          <div className="skill">
-            <Typography color="textPrimary">Microservices</Typography>
-            <LinearProgress variant="determinate" value={80} />
-          </div>
-          <div className="skill">
-            <Typography color="textPrimary">React Native</Typography>
-            <LinearProgress variant="determinate" value={50} />
-          </div>
+        <Grid item className="vertical-section section2-container">
+          <Grid container xs={7} direction="row" alignItems="center" justify="flex-sart">
+          { skills.map((s, i) => {
+            return (
+              <Grid item key={i} className="skill">
+                <div >
+                  <Typography color="textPrimary">{s.name}</Typography>
+                  <LinearProgress variant="determinate" value={s.level} />
+                </div>
+              </Grid>
+            )
+            })
+          }
+          </Grid>
         </Grid>
     )
 }

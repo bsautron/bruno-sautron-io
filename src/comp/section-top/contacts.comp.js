@@ -7,17 +7,17 @@ export function Contacts() {
           <Grid container className="container-section1-contacts" direction="column" justify="space-around">
             <Grid item>
               <Typography className="section1-contacts-item" variant="h4" color="textPrimary">
-                <Mail /> bruno@sautron.io
+                <Mail fontSize="large"/> bruno@sautron.io
               </Typography>
           </Grid>
           <Grid item>
             <Typography className="section1-contacts-item" variant="h4" color="textPrimary">
-              <Phone /> +33 7 86 65 45 20
+              <Phone fontSize="large"/> +33 7 86 65 45 20
             </Typography>
           </Grid>
             <Grid item>
               <Typography className="section1-contacts-item" variant="h4" color="textPrimary">
-                <LocationOn/>Full Remote
+                <LocationOn fontSize="large"/>Full Remote
               </Typography>
             </Grid>
           </Grid>
