@@ -14,7 +14,7 @@ export function SectionMiddle() {
 
     return (
         <Grid item className="vertical-section section2-container">
-          <Grid container xs={7} direction="row" alignItems="center" justify="flex-sart">
+          {/* <Grid container xs={7} direction="row" alignItems="center" justify="flex-sart">
           { skills.map((s, i) => {
             return (
               <Grid item key={i} className="skill">
@@ -26,7 +26,7 @@ export function SectionMiddle() {
             )
             })
           }
-          </Grid>
+          </Grid> */}
         </Grid>
     )
 }

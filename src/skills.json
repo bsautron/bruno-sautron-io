@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Typescript / NodeJs",
+        "level": 100
+    },
+    {
+        "name": "GraphQL",
+        "level": 90
+    },
+    {
+        "name": "Microservices",
+        "level": 80
+    },
+    {
+        "name": "React Native",
+        "level": 50
+    },
+    {
+        "name": "PostgreSQL",
+        "level": 100
+    },
+    {
+        "name": "ReactJs / Angular",
+        "level": 80
+    },
+    {
+        "name": "AWS",
+        "level": 60
+    }
+]
