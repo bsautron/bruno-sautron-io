@@ -11,7 +11,8 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 COPY yarn.lock ./
 RUN yarn
-RUN yarn global add react-scripts@3.4.1
+RUN yarn global add react-scripts
+
 
 # add app
 COPY . ./

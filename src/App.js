@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Grid, Typography, LinearProgress } from '@material-ui/core';
+import { Grid, Typography, Backdrop, LinearProgress } from '@material-ui/core';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import './App.css';
@@ -9,14 +9,16 @@ import {Names } from './comp/section-top/names.comp'
 import {Contacts } from './comp/section-top/contacts.comp'
 import {AboutMe } from './comp/section-top/about-me.comp'
 import { Experience } from './comp/section-bottom/experience';
+import { SpeedDial, SpeedDialAction } from '@material-ui/lab';
+import { Colorize, FiberManualRecord, Palette } from '@material-ui/icons';
 
 function App() {
-  const [themeName] = useState('default')
-  // const [displayTheme, setDisplayTheme] = useState(false)
+  const [themeName, setTheme] = useState('syldrak')
+  const [displayTheme, setDisplayTheme] = useState(false)
 
   const muiTheme = createMuiTheme({
     typography: themeJson.sizes,
-    palette: themeJson.colors[themeName] || themeJson.colors['default']
+    palette: themeJson.colors[themeName] || themeJson.colors['syldrak']
     
   });
 
@@ -24,43 +26,30 @@ function App() {
     <ThemeProvider theme={muiTheme}>
       <CssBaseline />
       
-      {/* <Grid container direction="column" justify="flex-end" alignContent="flex-end" className="fab-settings">
-        <Grid item alignItems="right">
-
-          <Grid container alignItems="center" direction="column">
-          {
-            displayTheme ? 
-            (<Backdrop open={displayTheme} onClick={() => setDisplayTheme(false) }>
-              <Grid className="grid-fab-sub-colors" container alignContent="flex-end" direction="column">
-
-              {Object.keys(themeJson.colors).map((tn, i) => {
-                  return <Grid item className="fab-sub-colors">
-                    <Fab key={i} size="small" color="primary" style={{color: themeJson.colors[tn].primary.main, backgroundColor: themeJson.colors[tn].background.default}} aria-label={tn}>
-                    {
-                      tn === themeName
-                      ? <Palette  />
-                      : <FiberManualRecord onClick={ (e) => {e.preventDefault(); setTheme(tn);} }/>
-                    }
-                    </Fab>
-                  </Grid>
-                })}
-              </Grid></Backdrop>)  : ''
-            }
-            <Grid item className="grid-fab-colors">
-              <Fab size="small" color="primary" aria-label="settings">
-                <Colorize onClick={ () => setDisplayTheme(!displayTheme)} />
-              </Fab>
-            </Grid>
-          </Grid>
-          
-        </Grid>
-      </Grid> */}
-      {/* import { SpeedDial } from '@material-ui/lab'; */}
-
+      <Backdrop open={displayTheme} onClick={() => setDisplayTheme(false)} />
+      <SpeedDial
+          className="colorize"
+          direction="up"
+          ariaLabel="Teeme Picker"
+          icon={<Colorize />}
+          onClose={() => setDisplayTheme(false)}
+          onOpen={() => setDisplayTheme(true)}
+          open={displayTheme}
+        >
+        {Object.keys(themeJson.colors).map((tn, i) => {
+          return <SpeedDialAction
+            FabProps={{style: {color: themeJson.colors[tn].primary.main, backgroundColor: themeJson.colors[tn].background.default}}}
+            key={i}
+            icon={tn === themeName ? <Palette/>: <FiberManualRecord onClick={(e) => {e.stopPropagation(); setTheme(tn);}}/>}
+            tooltipTitle={tn}
+            onClick={() => setDisplayTheme(false)}
+          />
+        })}
+      </SpeedDial>
       
 
       <div className="container">
-        <Grid className="container-grid" direction="column" justify="space-between" alignItems="center">
+        <Grid container className="container-grid" direction="column" justify="space-between" alignItems="center">
           
           <Grid item className="vertical-section">
             <Grid container className="container-section1" spacing={3} direction="row" justify="space-between">
@@ -70,11 +59,11 @@ function App() {
                 <Grid item className="section-item item-skills" xs={12}>
                   <Typography variant="h3" color="primary">Skills</Typography>
 
-                  <Grid container direction="row" alignItems="center" justify="flex-sart">
+                  <Grid container direction="row" alignItems="center" justify="flex-start">
                     { skills.map((s, i) => {
                       return (
                         <Grid item key={i} className="skill">
-                          <div >
+                          <div>
                             <Typography color="textPrimary">{s.name}</Typography>
                             <LinearProgress variant="determinate" value={s.level} />
                           </div>

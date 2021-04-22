@@ -12,6 +12,10 @@
         "level": 80
     },
     {
+        "name": "AWS",
+        "level": 60
+    },
+    {
         "name": "React Native",
         "level": 50
     },
@@ -22,9 +26,5 @@
     {
         "name": "ReactJs / Angular",
         "level": 80
-    },
-    {
-        "name": "AWS",
-        "level": 60
     }
 ]
