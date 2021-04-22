@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import './names.css'
 export function Names() {
 

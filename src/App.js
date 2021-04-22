@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
-import { Hidden , Fab, Grid, Backdrop, Typography, LinearProgress } from '@material-ui/core';
+import { Grid, Typography, LinearProgress } from '@material-ui/core';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import './App.css';
-import {Colorize, FiberManualRecord, Palette } from '@material-ui/icons';
 import themeJson from './themes.json'
 import skills from './skills.json'
 import {Names } from './comp/section-top/names.comp'
@@ -12,8 +11,8 @@ import {AboutMe } from './comp/section-top/about-me.comp'
 import { Experience } from './comp/section-bottom/experience';
 
 function App() {
-  const [themeName, setTheme] = useState('default')
-  const [displayTheme, setDisplayTheme] = useState(false)
+  const [themeName] = useState('default')
+  // const [displayTheme, setDisplayTheme] = useState(false)
 
   const muiTheme = createMuiTheme({
     typography: themeJson.sizes,
