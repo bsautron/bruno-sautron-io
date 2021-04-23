@@ -25,12 +25,13 @@
 .section1-contacts-item {
   padding: 10px 0;
 }
-.skill {
-  width: 200px;
+.skill-item {
+  width: 100%;
   height: 30px;
   padding: 20px;
   display: inline-block;
 }
+
 /* 
 value         |0px     600px    960px    1280px   1920px
 key           |xs      sm       md       lg       xl
@@ -39,7 +40,7 @@ range         |   xs   |   sm   |   md   |   lg   |   xl */
 
 .section-item { margin-bottom: 50px !important; }
 .container { padding-top: 10px; padding-left: 10px; padding-right: 10px;}
-.item-names {}
+.item-names {max-height: 200px;}
 .item-contacts { }
 .item-about {}
 .item-skills { position: relative; }
@@ -49,10 +50,11 @@ range         |   xs   |   sm   |   md   |   lg   |   xl */
 @media (min-width: 600px) {
   .section-item { }
   .container { padding-left: 20px; padding-right: 20px;}
-  .item-names {}
+  .item-names { max-height: auto; }
   .item-contacts {}
   .item-about { }
   .item-skills {  }
+  .skill-item { width: 210px; }
   .item-experiences {}
 }
 
@@ -70,7 +72,7 @@ range         |   xs   |   sm   |   md   |   lg   |   xl */
   .item-names {}
   .item-contacts {}
   .item-about {}
-  .item-skills { }
+  .item-skills { position: relative; top: 28px }
   .item-experiences { margin-top: 80px !important; position: relative;  }
 }
 

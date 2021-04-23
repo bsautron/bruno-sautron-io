@@ -60,12 +60,12 @@ function App() {
                   <Typography variant="h3" color="primary">Skills</Typography>
 
                   <Grid container direction="row" alignItems="center" justify="flex-start">
-                    { skills.map((s, i) => {
+                    { skills.map((s) => {
                       return (
-                        <Grid item key={i} className="skill">
+                        <Grid item key={s.name} className="skill-item">
                           <div>
                             <Typography color="textPrimary">{s.name}</Typography>
-                            <LinearProgress variant="determinate" value={s.level} />
+                            <LinearProgress className="skill-level" variant="determinate" value={s.level} />
                           </div>
                         </Grid>
                       )

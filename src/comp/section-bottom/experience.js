@@ -1,12 +1,18 @@
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Hidden, Typography } from '@material-ui/core';
 import './experience.css';
 
 export function Experience({ title, company, years, children, tech }) {
     return (
             <Grid container className="container-section3-job" direction="column" alignItems="flex-start">
               <Grid item className="item-section3 item-section3-titles">
-                <Typography className="item-section3-titles-title" align="right" variant="h3" color="primary">{title}</Typography>
-                <Typography className="item-section3-titles-years"align="right" variant="subtitle2" color="textSecondary">{company} @ {years}</Typography>
+                <Hidden only={['xs', 'sm', 'md']}>
+                  <Typography className="item-section3-titles-title" align="right" variant="h3" color="primary">{title}</Typography>
+                  <Typography className="item-section3-titles-years"align="right" variant="subtitle2" color="textSecondary">{company} @ {years}</Typography>
+                </Hidden>
+                <Hidden only={['lg', 'xl']}>
+                  <Typography className="item-section3-titles-title" align="left" variant="h3" color="primary">{title}</Typography>
+                  <Typography className="item-section3-titles-years"align="left" variant="subtitle2" color="textSecondary">{company} @ {years}</Typography>
+                </Hidden>
               </Grid>
               <Grid item className="item-section3">
             </Grid>

@@ -45,7 +45,7 @@ export function Contacts() {
 
             <Grid item>
                 <Grid container direction="row" alignItems="center">
-                  <Grid item><Home color="primary" className="icon-contact"/></Grid>
+                  <Grid item><Home color="primary" className="icon-contact icon-contact-home"/></Grid>
                   <Grid item><Link className="aditional-contact-link" color="textPrimary" component="a" target="_blank" href="https://www.linkedin.com/in/bsautron/">Linkedin</Link></Grid>
                   <Grid item><Link className="aditional-contact-link" color="textPrimary" component="a" target="_blank" href="https://www.malt.fr/profile/brunosautron/">Malt</Link></Grid>
                   <Grid item><Link className="aditional-contact-link" color="textPrimary" component="a" target="_blank" href="https://www.instagram.com/by.sautron/">Instagram</Link></Grid>
