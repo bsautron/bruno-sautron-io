@@ -10,7 +10,7 @@ export function AboutMe() {
             </Typography>
 
             <Typography paragraph={true} color="textPrimary">
-                I take pleasure in supporting my clients in their ideas and bringing them to life by providing my technical knowledge. I like to collaborate, understand, guide, and finally guide to <b>bring projects to fruition</b>.
+                I take pleasure in supporting my clients in their ideas and bringing them to life by providing my technical knowledge. I like to collaborate, understand, guide, and finally <b>bring projects to fruition</b>.
             </Typography>
 
             <Typography color="textPrimary">
