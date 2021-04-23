@@ -46,7 +46,6 @@ function App() {
           />
         })}
       </SpeedDial>
-      
 
       <div className="container">
         <Grid container className="container-grid" direction="column" justify="space-between" alignItems="center">
