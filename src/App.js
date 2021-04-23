@@ -49,7 +49,6 @@ function App() {
 
       <div className="container">
         <Grid container className="container-grid" direction="column" justify="space-between" alignItems="center">
-          
           <Grid item className="vertical-section">
             <Grid container className="container-section1" spacing={3} direction="row" justify="space-between">
               <Grid item lg={8} md={12} sm={12} xs={12} container >
