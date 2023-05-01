@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:18-alpine
+FROM node:18-alpine as build
 
 WORKDIR /app
 
@@ -12,7 +12,8 @@ RUN rm -rf node_modules && yarn install --frozen-lockfile
 RUN yarn global add react-scripts
 
 COPY . ./
-RUN yarn build
+
+RUN yarn run build
 
 
 # production environment
@@ -27,5 +28,3 @@ RUN yarn build
 # COPY --from=build /app/build /usr/share/nginx/html
 
 
-# Expose HTTP and HTTPS ports
-EXPOSE 3000
