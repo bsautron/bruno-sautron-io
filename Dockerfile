@@ -1,26 +1,31 @@
 # pull official base image
 FROM node:18-alpine
 
-# set working directory
 WORKDIR /app
 
-# add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
 
-# install app dependencies
 COPY package.json ./
 COPY yarn.lock ./
-RUN yarn config set unsafe-perm true
-RUN yarn
+
+RUN rm -rf node_modules && yarn install --frozen-lockfile
 RUN yarn global add react-scripts
 
-
-# add app
 COPY . ./
+RUN yarn build
 
-RUN chown -R node /app/node_modules
 
-USER node
+# production environment
+# FROM nginx:stable-alpine
 
-# start app
-CMD ["npm", "start"]
+# # Set up Nginx config and remove default files
+# RUN rm -rf /usr/share/nginx/html/*
+# RUN rm /etc/nginx/conf.d/default.conf
+# COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+
+# Copy Application
+# COPY --from=build /app/build /usr/share/nginx/html
+
+
+# Expose HTTP and HTTPS ports
+EXPOSE 3000

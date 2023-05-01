@@ -1,18 +1,24 @@
 version: '3.7'
 
 services:
-
-  web:
-    container_name: bruno-sautron-io
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    volumes:
+      - ./nginx/conf/:/etc/nginx/conf.d/:ro
+      - ./certbot/www:/var/www/certbot/:ro
+    
+  web_cv:
+    container_name: bruno-sautron-io-cv
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.prod
+  
+  certbot:
+    image: certbot/certbot:latest
     volumes:
-      - '.:/app'
-      - '/app/node_modules'
-    ports:
-      - 3001:3000
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    
-      
+      - ./certbot/conf:/etc/letsencrypt:rw
+      - ./certbot/www:/var/www/certbot:rw
