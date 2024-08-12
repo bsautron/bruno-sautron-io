@@ -1,8 +1,9 @@
 [
   {
     "title": "Senior backend",
+    "utc": [-6],
     "company": "Lalalab",
-    "years": "2021 - 2022",
+    "years": "2021 - 2023",
     "tech": [
       ["nodejs", "mysql", "postgresql"],
       ["rest api", "moleculerjs", "sequelize"],
@@ -16,6 +17,7 @@
   },
   {
     "title": "Backend",
+    "utc": [3],
     "company": "Wemaintain",
     "years": "2018 - 2020",
     "tech": [
@@ -31,6 +33,7 @@
   {
     "title": "Lead backend",
     "company": "Pickme",
+    "utc": [3],
     "years": "2020",
     "tech": [
       ["typescript", "nodejs", "graphql", "postgresql"],

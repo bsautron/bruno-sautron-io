@@ -37,7 +37,7 @@
     "colors": {
         "syldrak": {
             "background": {
-                "default": "#FAFAFA"
+                "default": "#f9f7f1"
             },
             "primary": {
                 "main": "#3b3a30"
