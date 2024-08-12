@@ -36,13 +36,11 @@ server {
 
     server_name bruno.sautron.io;
 
-    root /usr/share/nginx/bruno;
+    root /usr/share/nginx/brunocv;
 
     index  index.html index.htm;
 
-    ssl_certificate /etc/letsencrypt/live/bruno.sautron.io/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/bruno.sautron.io/privkey.pem;
-    include /etc/letsencrypt/options-ssl-nginx.conf;
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+    ssl_certificate /etc/nginx/ssl/live/bruno.sautron.io/fullchain.pem;
+    ssl_certificate_key /etc/nginx/ssl/live/bruno.sautron.io/privkey.pem;
 }
 ```
