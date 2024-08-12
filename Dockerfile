@@ -17,14 +17,14 @@ COPY . ./
 RUN yarn run build
 
 # production environment
-# FROM nginx:stable-alpine
+FROM nginx:stable-alpine
 
-# # Set up Nginx config and remove default files
-# RUN rm -rf /usr/share/nginx/html/*
-# RUN rm /etc/nginx/conf.d/default.conf
-# COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+# Set up Nginx config and remove default files
+RUN rm -rf /usr/share/nginx/html/*
+RUN rm /etc/nginx/conf.d/default.conf
+COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
 
 # Copy Application
-# COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/build /usr/share/nginx/html
 
 

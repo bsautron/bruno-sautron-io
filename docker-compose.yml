@@ -1,18 +1,31 @@
-version: '3.7'
+version: "3.7"
 
 services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    volumes:
+      - ./nginx/conf/:/etc/nginx/conf.d/:ro
+      - ./certbot/www/:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
+      - brunocv:/usr/share/nginx/brunocv/:ro
+
   web_cv:
     container_name: bruno-sautron-io-cv
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - proxy-conf:/app/nginx/conf/:rw
-      - proxy-static:/app/:rw
+      - brunocv:/app/build/:rw
+
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/conf/:/etc/letsencrypt/:rw
+      - ./certbot/www/:/var/www/certbot/:rw
 
 volumes:
-  proxy-conf:
-    external: true
-  proxy-static:
-    external: true
-
+  brunocv:
