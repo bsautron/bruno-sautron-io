@@ -1,30 +1,121 @@
 [
     {
-        "name": "Typescript / NodeJs",
-        "level": 100
+        "name": "Backend development",
+        "level": 100,
+        "tools": [
+            {
+                "name": "NodeJs"
+            },
+            {
+                "favorite": true,
+                "name": "Typescript"
+            }
+        ]
     },
     {
-        "name": "GraphQL",
-        "level": 90
+        "name": "Cloud availability",
+        "level": 60,
+        "tools": [
+            {
+                "favorite": true,
+                "name": "Kubernetes"
+            },
+            {
+                "name": "AWS"
+            },
+            {
+                "name": "Docker"
+            }
+        ]
     },
     {
-        "name": "Microservices",
-        "level": 80
+        "name": "API Rest",
+        "level": 100,
+        "tools": [
+            {
+                "name": "MoleculerJs"
+            },
+            {
+                "favorite": true,
+                "name": "NestJs"
+            },
+            {
+                "name": "Express"
+            }
+        ]
     },
     {
-        "name": "AWS",
-        "level": 60
+        "name": "Distributed computing",
+        "level": 95,
+        "tools": [
+            {
+                "favorite": true,
+                "name": "Microservices"
+            },
+            {
+                "name": "AWS SQS/SNS"
+            },
+            {
+                "name": "RabbitMq"
+            },
+            {
+                "name": "gRPC"
+            }
+        ]
     },
     {
-        "name": "React Native",
-        "level": 50
+        "name": "Graph Api",
+        "level": 80,
+        "tools": [
+            {
+                "favorite": true,
+                "name": "GraphQL"
+            },
+            {
+                "name": "Apollo"
+            }
+        ]
     },
     {
-        "name": "PostgreSQL",
-        "level": 100
+        "name": "Cross-platform mobile",
+        "level": 55,
+        "tools": [
+            {
+                "favorite": true,
+                "name": "React Native"
+            }
+        ]
     },
     {
-        "name": "ReactJs / Angular",
-        "level": 80
+        "name": "Databases",
+        "level": 90,
+        "tools": [
+            {
+                "name": "MySQL"
+            },
+            {
+                "favorite": true,
+                "name": "PostgreSQL"
+            },
+            {
+                "name": "MongoDB"
+            },
+            {
+                "name": "Redis"
+            }
+        ]
+    },
+    {
+        "name": "Frontend development",
+        "level": 85,
+        "tools": [
+            {
+                "favorite": true,
+                "name": "React"
+            },
+            {
+                "name": "Angular"
+            }
+        ]
     }
 ]

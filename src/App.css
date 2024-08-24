@@ -27,7 +27,7 @@
 }
 .skill-item {
   width: 100%;
-  height: 30px;
+  /* height: 30px; */
   padding: 20px;
   display: inline-block;
 }
@@ -54,7 +54,7 @@ range         |   xs   |   sm   |   md   |   lg   |   xl */
   .item-contacts {}
   .item-about { }
   .item-skills {  }
-  .skill-item { width: 210px; }
+  .skill-item { width: auto; }
   .item-experiences {}
 }
 

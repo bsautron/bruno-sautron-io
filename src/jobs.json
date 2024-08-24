@@ -1,29 +1,61 @@
 [
   {
     "title": "Senior backend",
-    "utc": [-6],
+    "utc": [
+      -6
+    ],
     "company": "Lalalab",
-    "years": "2021 - 2023",
+    "years": "2021 - Today",
     "tech": [
-      ["nodejs", "mysql", "postgresql"],
-      ["rest api", "moleculerjs", "sequelize"],
-      ["aws", "rabitmq", "docker"]
+      [
+        "nodejs",
+        "mysql",
+        "postgresql"
+      ],
+      [
+        "rest api",
+        "moleculerjs",
+        "sequelize"
+      ],
+      [
+        "aws",
+        "rabitmq",
+        "docker"
+      ]
     ],
     "explanations": [
-      "Development of new cart and pricing system",
-      "Creation of new <b>microservices</b> backend inter-connected with a broker thought NAT protocol",
-      "Traffic from <b>70 countries</b>"
+      "<b>Lead architect</b> for backend development",
+      "Development of <b>microservices</b> inter-connected with a broker thought NAT protocol",
+      "Traffic up to <b>9k order/day</b available in <b>70 countries</b>"
     ]
   },
   {
     "title": "Backend",
-    "utc": [3],
+    "utc": [
+      3
+    ],
     "company": "Wemaintain",
     "years": "2018 - 2020",
     "tech": [
-      ["typescript", "nodejs", "graphql", "postgresql"],
-      ["rest api", "react native", "typeorm", "code first"],
-      ["aws", "SQS/SNS", "docker", "gPRC", "nestjs"]
+      [
+        "typescript",
+        "nodejs",
+        "graphql",
+        "postgresql"
+      ],
+      [
+        "rest api",
+        "react native",
+        "typeorm",
+        "code first"
+      ],
+      [
+        "aws",
+        "SQS/SNS",
+        "docker",
+        "gPRC",
+        "nestjs"
+      ]
     ],
     "explanations": [
       "Development of a platform to manage the lift mecanics from all maintenances and repairs tasks",
@@ -33,12 +65,28 @@
   {
     "title": "Lead backend",
     "company": "Pickme",
-    "utc": [3],
+    "utc": [
+      3
+    ],
     "years": "2020",
     "tech": [
-      ["typescript", "nodejs", "graphql", "postgresql"],
-      ["rest api", "react native", "typeorm"],
-      ["aws", "SQS/SNS", "docker", "nestjs"]
+      [
+        "typescript",
+        "nodejs",
+        "graphql",
+        "postgresql"
+      ],
+      [
+        "rest api",
+        "react native",
+        "typeorm"
+      ],
+      [
+        "aws",
+        "SQS/SNS",
+        "docker",
+        "nestjs"
+      ]
     ],
     "explanations": [
       "Development of a <b>React Native app</b> for to manage a neighborhood relay point community",
@@ -50,8 +98,16 @@
     "company": "LikeWeb Agency",
     "years": "2017",
     "tech": [
-      ["typescript", "nodejs", "rest api"],
-      ["ionic", "angularjs", "mongodb"]
+      [
+        "typescript",
+        "nodejs",
+        "rest api"
+      ],
+      [
+        "ionic",
+        "angularjs",
+        "mongodb"
+      ]
     ],
     "explanations": [
       "Development of a <b>Ionic app</b> for doctors which connects doctors and substitute doctors",
@@ -63,9 +119,20 @@
     "company": "Neo9",
     "years": "2016 - 2017",
     "tech": [
-      ["angularjs", "nodejs", "mongodb"],
-      ["rest api", "microservices"],
-      ["ngnix", "elasticsearch", "jenkins"]
+      [
+        "angularjs",
+        "nodejs",
+        "mongodb"
+      ],
+      [
+        "rest api",
+        "microservices"
+      ],
+      [
+        "ngnix",
+        "elasticsearch",
+        "jenkins"
+      ]
     ],
     "explanations": [
       "Development of a e-commerce platform Pixmania.com",
@@ -78,8 +145,18 @@
     "company": "Parrot",
     "years": "2015",
     "tech": [
-      ["nodejs", "es6", "html", "css"],
-      ["raspberry pi", "bluetooth", "ssh", "github"]
+      [
+        "nodejs",
+        "es6",
+        "html",
+        "css"
+      ],
+      [
+        "raspberry pi",
+        "bluetooth",
+        "ssh",
+        "github"
+      ]
     ],
     "explanations": [
       "Development of a bridge to automatically <b>collect information</b> from the parrot FlowerPower sensors and <b>send them to the cloud</b>",
