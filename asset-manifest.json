@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/bruno-sautron-io/static/css/main.49d870c3.chunk.css",
+    "main.js": "/bruno-sautron-io/static/js/main.cdecb133.chunk.js",
+    "main.js.map": "/bruno-sautron-io/static/js/main.cdecb133.chunk.js.map",
+    "runtime-main.js": "/bruno-sautron-io/static/js/runtime-main.1148bed2.js",
+    "runtime-main.js.map": "/bruno-sautron-io/static/js/runtime-main.1148bed2.js.map",
+    "static/js/2.d3600ec6.chunk.js": "/bruno-sautron-io/static/js/2.d3600ec6.chunk.js",
+    "static/js/2.d3600ec6.chunk.js.map": "/bruno-sautron-io/static/js/2.d3600ec6.chunk.js.map",
+    "index.html": "/bruno-sautron-io/index.html",
+    "static/css/main.49d870c3.chunk.css.map": "/bruno-sautron-io/static/css/main.49d870c3.chunk.css.map",
+    "static/js/2.d3600ec6.chunk.js.LICENSE.txt": "/bruno-sautron-io/static/js/2.d3600ec6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1148bed2.js",
+    "static/js/2.d3600ec6.chunk.js",
+    "static/css/main.49d870c3.chunk.css",
+    "static/js/main.cdecb133.chunk.js"
+  ]
+}
