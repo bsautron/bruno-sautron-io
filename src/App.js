@@ -8,6 +8,7 @@ import { AboutMe } from './comp/section-top/about-me.comp'
 import { Job } from './comp/section-bottom/job'
 import { NeuralField } from './comp/neural-field/neural-field'
 import { NeuralFieldToggle } from './comp/neural-field/neural-field-toggle'
+import { CvAssistant } from './comp/cv-assistant/cv-assistant'
 
 function fireSynapse(event) {
   const rect = event.currentTarget.getBoundingClientRect()
@@ -26,6 +27,7 @@ function App() {
     <>
       <NeuralField paused={paused} />
       <NeuralFieldToggle paused={paused} onToggle={() => setPaused((p) => !p)} />
+      <CvAssistant />
 
       <main className="paper">
         <header className="masthead">

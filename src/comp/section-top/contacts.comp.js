@@ -1,20 +1,7 @@
+import contactsData from '../../contacts.json'
 import './contacts.css'
 
-const CONTACTS = [
-  { mark: '*', label: 'bruno@sautron.io', href: 'mailto:bruno@sautron.io' },
-  { mark: '†', label: '+33 7 86 65 45 20', href: 'tel:+33786654520' },
-  {
-    mark: '‡',
-    label: 'Full Remote',
-    href: 'https://www.google.fr/maps/space/io/@-13.1874945,-22.9320692,19286313m/data=!3m1!1e3',
-  },
-]
-
-const LINKS = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/bsautron/' },
-  { label: 'Malt', href: 'https://www.malt.fr/profile/brunosautron/' },
-  { label: 'Instagram', href: 'https://www.instagram.com/by.sautron/' },
-]
+const { contacts: CONTACTS, links: LINKS } = contactsData
 
 export function Contacts() {
   return (
