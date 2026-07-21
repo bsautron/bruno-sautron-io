@@ -1,0 +1,7 @@
+.neural-field {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-canvas);
+  display: block;
+  background: var(--backdrop);
+}

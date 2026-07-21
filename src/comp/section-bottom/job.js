@@ -1,17 +1,11 @@
-import { Grid, Typography } from '@material-ui/core';
-import { Experience } from './experience';
+import { Experience } from './experience'
 
-export function Job({ title, company, years, tech, explanations }) {
-    return <>
-        <Grid item lg={4} md={6} sm={6} xs={12}>
-            <Experience title={title} company={company} years={years} tech={tech}>
-                {
-                    explanations.map((explanation, i) => {
-                        return <Typography key={i} paragraph={true} color="textPrimary"
-                        dangerouslySetInnerHTML={{__html: explanation}} />
-                    })
-                }
-            </Experience>
-        </Grid>
-    </>
+export function Job({ index, title, company, years, tech, explanations }) {
+  return (
+    <Experience index={index} title={title} company={company} years={years} tech={tech}>
+      {explanations.map((explanation, i) => (
+        <p key={i} dangerouslySetInnerHTML={{ __html: explanation }} />
+      ))}
+    </Experience>
+  )
 }

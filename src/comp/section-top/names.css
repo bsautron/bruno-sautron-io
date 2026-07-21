@@ -1,4 +1,38 @@
-.section1-names-title {
-    top: -60px;
-    position: relative;
+.masthead-kicker {
+  margin: 0 0 0.9em;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.masthead-name {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 5vw + 1rem, 4.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  color: var(--ink);
+}
+
+.masthead-name-first {
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+
+.masthead-name-last {
+  font-weight: 700;
+  text-shadow: var(--glow-accent);
+}
+
+.masthead-role {
+  margin: 0.5em 0 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink-muted);
 }

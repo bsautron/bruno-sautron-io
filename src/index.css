@@ -1,14 +1,56 @@
+:root {
+  --font-serif: 'STIX Two Text', 'Source Serif 4', Georgia, serif;
+  --font-sans: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* cortex — a void canvas carrying a live neuron field, read through a glass panel */
+  --backdrop: oklch(9% 0.02 264);
+  --paper: oklch(16% 0.026 264 / 0.86);
+  --paper-edge: oklch(38% 0.03 240 / 0.55);
+  --ink: oklch(93% 0.012 95);
+  --ink-muted: oklch(76% 0.02 200);
+  --ink-faint: oklch(64% 0.02 220);
+  --rule: oklch(40% 0.03 230 / 0.6);
+  --accent: oklch(78% 0.15 200);
+  --accent-fire: oklch(74% 0.18 300);
+  --accent-soft: oklch(30% 0.05 200 / 0.5);
+  --shadow: oklch(2% 0.01 265 / 0.6);
+  --glow-accent: 0 0 18px oklch(78% 0.15 200 / 0.45);
+
+  --z-canvas: 0;
+  --z-content: 1;
+  --z-toggle: 10;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: var(--backdrop);
+  color: var(--ink);
+  font-family: var(--font-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent);
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--ink);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
 }

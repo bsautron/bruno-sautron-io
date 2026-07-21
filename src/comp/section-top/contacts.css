@@ -1,22 +1,45 @@
-.icon-contact {
-    position: relative;
-    font-size: 35px !important;
-    margin-right: 12px;
-    top: 3px;
-}
-.icon-contact-home {
-    position: relative;
-    top: 8px;
-}
-.aditional-contact-link {
-    position: relative;
-    top: 11px;
-    padding-right: 15px;
+.masthead-contacts {
+  margin-top: 1.4em;
 }
 
-@media (min-width: 821px) {
-    .icon-contact {
-        font-size: 40px !important;
-        top: 8px;
-    }
+.contact-footnotes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em 1.4em;
+  margin: 0 0 0.6em;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+}
+
+.contact-footnotes a,
+.contact-links a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease-out, border-color 0.15s ease-out;
+}
+
+.contact-footnotes a:hover,
+.contact-links a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.contact-mark {
+  color: var(--accent);
+  margin-right: 0.3em;
+  font-family: var(--font-serif);
+}
+
+.contact-links {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+}
+
+.contact-links-sep {
+  color: var(--ink-faint);
 }

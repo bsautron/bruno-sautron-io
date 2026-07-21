@@ -1,0 +1,65 @@
+.neural-toggle {
+  position: fixed;
+  top: clamp(14px, 3vw, 28px);
+  right: clamp(14px, 3vw, 28px);
+  z-index: var(--z-toggle);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em 0.9em;
+  border-radius: 999px;
+  border: 1px solid var(--paper-edge);
+  background: var(--paper);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  color: var(--ink-muted);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 1px 2px var(--shadow);
+  transition: color 0.2s ease-out, border-color 0.2s ease-out, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neural-toggle:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+  transform: scale(1.03);
+}
+
+.neural-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.neural-toggle-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink-faint);
+}
+
+.neural-toggle-dot[data-active='true'] {
+  background: var(--accent);
+  box-shadow: var(--glow-accent);
+  animation: neural-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes neural-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neural-toggle-dot[data-active='true'] {
+    animation: none;
+  }
+}
+
+@media print {
+  .neural-toggle {
+    display: none;
+  }
+}
