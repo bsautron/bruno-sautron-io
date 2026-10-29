@@ -1,7 +1,7 @@
 {
   "name": "bruno-sautron-io",
   "version": "0.1.0",
-  "homepage": "https://bsautron.github.io",
+  "homepage": "https://bruno.sautron.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
