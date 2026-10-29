@@ -19,14 +19,22 @@
       ],
       [
         "aws",
-        "rabitmq",
+        "rabbitmq",
         "docker"
+      ],
+      [
+        "mcp",
+        "claude code",
+        "llm tool calling"
       ]
     ],
     "explanations": [
       "<b>Lead architect</b> for backend development",
-      "Development of <b>microservices</b> inter-connected with a broker thought NAT protocol",
-      "Traffic up to <b>9k order/day</b available in <b>70 countries</b>"
+      "Development of <b>microservices</b> inter-connected through a NATS broker",
+      "Traffic up to <b>9k orders/day</b>, available in <b>70 countries</b>",
+      "Built an internal <b>MCP server</b> giving AI coding assistants access to our microservice architecture (services, actions, feature flags, infrastructure), <b>adopted by several developers</b> of the team",
+      "Created an <b>AI-assisted feature workflow</b> for the backend: from requirements to a reviewed spec, then to a merge request",
+      "Currently prototyping a first <b>AI agent</b> for infrastructure tasks"
     ]
   },
   {
@@ -53,13 +61,13 @@
         "aws",
         "SQS/SNS",
         "docker",
-        "gPRC",
+        "gRPC",
         "nestjs"
       ]
     ],
     "explanations": [
-      "Development of a platform to manage the lift mecanics from all maintenances and repairs tasks",
-      "Contribution of <b>powerful microservice</b> backend thanks recents librairies such as <b>GraphQL, gRPC,</b> ..."
+      "Development of a platform to manage lift mechanics across all maintenance and repair tasks",
+      "Contribution of <b>powerful microservice</b> backend using recent libraries such as <b>GraphQL, gRPC,</b> ..."
     ]
   },
   {
@@ -89,8 +97,8 @@
       ]
     ],
     "explanations": [
-      "Development of a <b>React Native app</b> for to manage a neighborhood relay point community",
-      "Creation of <b>reactive backend</b> thanks AWS SQS/SNS, cosumed by the app, the retailer and carrier"
+      "Development of a <b>React Native app</b> to manage a neighborhood relay point community",
+      "Creation of a <b>reactive backend</b> with AWS SQS/SNS, consumed by the app, the retailer and carrier"
     ]
   },
   {
@@ -110,7 +118,7 @@
       ]
     ],
     "explanations": [
-      "Development of a <b>Ionic app</b> for doctors which connects doctors and substitute doctors",
+      "Development of an <b>Ionic app</b> for doctors which connects doctors and substitute doctors",
       "Development of a NodeJS <b>api rest</b> backend for no-sql data"
     ]
   },
@@ -129,15 +137,15 @@
         "microservices"
       ],
       [
-        "ngnix",
+        "nginx",
         "elasticsearch",
         "jenkins"
       ]
     ],
     "explanations": [
-      "Development of a e-commerce platform Pixmania.com",
+      "Development of the e-commerce platform Pixmania.com",
       "Developed with <b>AngularJS</b> and NodeJS for microservices",
-      "Deployed in <b>14 diffrents countries</b>"
+      "Deployed in <b>14 different countries</b>"
     ]
   },
   {
@@ -160,7 +168,7 @@
     ],
     "explanations": [
       "Development of a bridge to automatically <b>collect information</b> from the parrot FlowerPower sensors and <b>send them to the cloud</b>",
-      "Additionally a web page to connected a dropbox account to upload data",
+      "Additionally a web page to connect a Dropbox account to upload data",
       "Development of an <b>open source</b> script in NodeJS running on <b>raspberry pi</b> and using a bluetooth dongle"
     ]
   }

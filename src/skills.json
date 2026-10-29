@@ -1,5 +1,21 @@
 [
     {
+        "name": "AI tooling",
+        "level": 50,
+        "tools": [
+            {
+                "favorite": true,
+                "name": "MCP"
+            },
+            {
+                "name": "Claude Code"
+            },
+            {
+                "name": "LLM tool calling"
+            }
+        ]
+    },
+    {
         "name": "Backend development",
         "level": 100,
         "tools": [
